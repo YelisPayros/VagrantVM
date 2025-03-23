@@ -15,7 +15,7 @@ Vagrant.configure("2") do |config|
       systemctl enable apache2
       systemctl start apache2
       rm -f /var/www/html/*  # Elimina cualquier archivo existente
-      echo "Hola desde Apache1" | sudo tee /var/www/html/index1.html
+      echo "Hola desde Apache1" | sudo tee /var/www/html/index.html
     SHELL
   end
 
